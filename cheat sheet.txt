@@ -1,0 +1,17 @@
+we use NodeJS and SocketIO to achieve this functionality
+
+
+* In http protocol server cant use post and get requests to get info from client
+
+--> can be done using Long polling but complex
+--> this can also be done with Web Socket which makes things easier for  us and makes a two way connection
+
+
+//copied from socketio official documentation//
+
+Introduction
+What Socket.IO is
+Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server.
+
+
+* we can use ajax but this will not be efficient to get data from database everytime

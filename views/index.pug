@@ -1,0 +1,21 @@
+doctype html
+| PASTE YOUR HTML CODE HERE
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Live Chat Application
+  link(rel='stylesheet' href='../static/css/style.css')
+  script(defer='' src='http://localhost:8080/socket.io/socket.io.js')
+  script(defer='' src='../static/js/client.js')
+nav
+  img.logo(src='—Pngtree—vector chat icon_3762784.png' alt='')
+  h1 Welcome to Live Chat
+.container
+  //
+    <div class="message right"></div>
+    <div class="message left"></div>
+.send
+  form#send-container(action='#')
+    input#messageInp(type='text' name='messageInp' placeholder='Enter your message here')
+    button.btn(type='submit') Send
